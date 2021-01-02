@@ -32,9 +32,17 @@ db-psql:
 rails-console:
 	@docker-compose run --rm web rails c
 
+## Run dev stack in production mode
+production:
+	RAILS_ENV="production" NODE_ENV="production" docker-compose up
+
 ## Run dev stack
 server:
 	@docker-compose up
+
+## Stop the server
+stop:
+	@docker-compose down
 
 ## Show help screen.
 help:
