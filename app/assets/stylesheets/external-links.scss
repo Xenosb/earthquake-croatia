@@ -1,9 +1,18 @@
-
 #external-links {
 
   .media {
-    .icon {
-      fill: #4a4a4a;
+    .section-header {
+      margin-bottom: 0.5rem;
+
+      .icon {
+        margin-right: 1rem;
+        fill: #4a4a4a;
+        vertical-align: middle;
+      }
+
+      .title {
+        vertical-align: middle;
+      }
     }
   }
 
@@ -16,5 +25,37 @@
         width: 1.5rem;
         fill: #4a4a4a;
       }
+  }
+
+  .hero {
+    border-radius: 0.5rem;
+
+    .hero-background {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 0.5rem;
+    }
+  }
+
+  #donations {
+    .hero {
+      .container {
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        font-family: 'Montserrat',sans-serif;
+      }
+
+      .hero-background {
+        background-color: #F3F9FB;
+      }
+    }
+  }
+
+  #map {
+    .hero-background {
+      background-image: url("karta-pomoci.png");
+    }
   }
 }

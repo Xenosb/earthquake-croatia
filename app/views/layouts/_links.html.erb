@@ -9,21 +9,81 @@
       </span>
     </span>
   </a>
-  <div class="card-content" data-card-target="content" hidden>
-    <div class="help-category">
+  <div class="card-content" data-card-target="content">
+    <div id="donations" class="help-category">
       <div class="media">
-        <div class="media-left">
-          <span class="icon is-large">
-            <%= inline_svg_tag('globe.svg', aria: true) %>
-          </span>
-        </div>
         <div class="media-content">
-          <p class="title is-4">Vanjske poveznice</p>
-          <p class="subtitle is-6">Provjerene poveznice na korisne dokumente i web stranice</p>
+          <div class="section-header">
+            <span class="icon is-large">
+              <%= inline_svg_tag('hand-holding-heart.svg', aria: true) %>
+            </span>
+            <span class="title is-4">Donacije</span>
+          </div>
+          <div class="content">
+            <p class="subtitle is-6">
+              Kako biti siguran da će donacije sigurno doći do potrebitih?
+              Otvorite stranicu Provjera i sudjelujte u pomoći putem jedne od
+              navedenih crowdfunding kampanja ili donacijom na provjeren račun.
+            </p>
+          </div>
+          <a href="https://www.provjera.com/" target="_blank">
+            <section class="hero is-dark is-bold">
+              <div class="hero-body is-relative">
+                <div class="hero-background"></div>
+                <div class="container">
+                  <span>Spriječimo internet prijevare među donacijama</span>
+                </div>
+              </div>
+            </section>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr/>
+    <div id="map" class="help-category">
+      <div class="media">
+        <div class="media-content">
+          <div class="section-header">
+            <span class="icon is-large">
+              <%= inline_svg_tag('map-marked-alt.svg', aria: true) %>
+            </span>
+            <span class="title is-4">Karta pomoći</span>
+          </div>
+          <div class="content">
+            <p class="subtitle is-6">
+              Ako tražite ili nudite pomoć na određenoj lokaciji, postavite svoj
+              oglas i detalje na niže navedenu kartu. Ako ste u unesrećenom
+              području na karti je moguće pronaći lokacije medicinske pomoći,
+              kuhinja, skladišta i ostalih bitnih točaka.
+            </p>
+          </div>
+        </div>
+      </div>
+      <a href="https://potres2020.openit.hr/views/map" target="_blank">
+        <section class="hero is-dark is-bold">
+          <div class="hero-body is-relative">
+            <div class="hero-background"></div>
+          </div>
+        </section>
+      </a>
+    </div>
+    <hr/>
+    <div id="links" class="help-category">
+      <div class="media">
+        <div class="media-content">
+          <div class="section-header">
+            <span class="icon is-large">
+              <%= inline_svg_tag('globe.svg', aria: true) %>
+            </span>
+            <span class="title is-4">Vanjske poveznice</span>
+          </div>
+          <div class="content">
+            <p class="subtitle is-6">Provjerene poveznice na korisne dokumente i web stranice</p>
+          </div>
         </div>
       </div>
       <ul class="content pl-2">
-        <li my-1>
+        <li>
           <span class="icon">
             <%= inline_svg_tag('file-word.svg', aria: true) %>
           </span>
@@ -45,14 +105,6 @@
           </span>
           <a href="https://www.facebook.com/groups/155412969344431/permalink/155812429304485/" target="_blank">
             Pomoć Glini, Petrinji, Sisku i okolnim mjestima
-          </a>
-        </li>
-        <li>
-          <span class="icon">
-            <%= inline_svg_tag('atlas.svg', aria: true) %>
-          </span>
-          <a href="https://potres2020.openit.hr/views/map" target="_blank">
-            Potres 2020 - mapa pomoći
           </a>
         </li>
       </ul>
